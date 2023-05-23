@@ -1,0 +1,34 @@
+.skills {
+    margin: 20px;
+    color: #fff; /* Set the text color to white or light color for visibility */
+  }
+  
+  .skills h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #333; /* Adjust the background color to match your dark theme */
+    border-radius: 5px;
+  }
+  
+  .skill-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .skill-item p {
+    font-size: 14px;
+  }
+  

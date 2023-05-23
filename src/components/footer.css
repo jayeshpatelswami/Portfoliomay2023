@@ -1,0 +1,11 @@
+.footer {
+    background-color: #333; /* Set the background color to match your dark theme */
+    color: #fff; /* Set the text color to white or light color for visibility */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  

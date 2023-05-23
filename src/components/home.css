@@ -1,0 +1,35 @@
+
+ .para::first-letter{
+
+    color: red;
+}
+.capi{
+    text-transform: capitalize;
+}
+
+.hris{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.center{
+    width: 80%; 
+}
+
+
+
+
+.btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn svg {
+    margin-right: 5px; /* Adjust the margin as needed */
+  }
+
+  .ssvg svg{
+    margin-right: 20px;
+  }
+  
