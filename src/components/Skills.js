@@ -17,6 +17,14 @@ const Skills = () => {
       description: 'i have  make many website with M-mongodb  E-express R-react N-node-js. '
     },
     {
+      name: 'mongodb',
+      description: 'i have good knowledge in mongodb i created a website with the help of mongodb database'
+    },
+    {
+      name: 'VS code',
+      description: 'all this things ,all this website are written in vs code it is very usefull app for a developer'
+    },
+    {
       name: 'git and github',
       description: 'frist i learn git and git hub so i make all website with easy.'
     },

@@ -14,7 +14,7 @@ export default function Home() {
           <h1 className="para  capi pt-5"> Hello , I am Jayesh Patel </h1>
           <h3 className="para capi py-2 mx-1">
          
-            I am a Full Stack Web developer and React Developer and gamer.{" "}
+            I am a Full Stack Web developer and React Developer and gamer.
           </h3>
         </div>
         <div>
