@@ -1,22 +1,31 @@
 
 import React, { useRef ,useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Alert from './Alert';
 
 const Form = () => {
     const form = useRef();
     const [info, setinfo] = useState({email : "" ,name : "" , message:""})
-    
+    const [alert,setalert] =useState( "d-none")
     const handalsubmit =(e)=>{
-        e.preventDefault();
-        emailjs.sendForm('service_ihokln8', 'template_olp7sn9', form.current, 'HUohTeyGDyCVs5T6K')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+      e.preventDefault();
 
      
+       setalert("")
 
+      emailjs.sendForm('service_ihokln8', 'template_olp7sn9', form.current, 'HUohTeyGDyCVs5T6K')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+      
+    
+     setTimeout(() => {
+       setalert("d-none")
+     }, 1500);
+
+     setinfo({email : "" ,name : "" , message:""})
     }
 
     const onchange = (e)=>{
@@ -25,9 +34,14 @@ const Form = () => {
 
   return (
     <div>
+      
+      <div className={`${alert}`}>
+  <Alert/>
+  </div>
+
       <form ref={form}  onSubmit={handalsubmit}>
               <div class="mb-3">
-                <label for="name" class="form-label">
+                <label htmlFor="name" class="form-label">
                   Your Name or Company Name
                 </label>
                 <input
@@ -40,13 +54,13 @@ const Form = () => {
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">
+                <label htmlFor="email" class="form-label">
                   Your Email Or Company Email
                 </label>
-                <input type="text" class="form-control" id="email" name='email' onChange={onchange} value={info.email}/>
+                <input type="email" class="form-control" id="email" name='email' onChange={onchange} value={info.email}/>
               </div>
               <div class="mb-3">
-                <label for="msg" class="form-label">
+                <label htmlFor="msg" class="form-label">
                   Type Your Massage
                 </label>
                 <input type="text" class="form-control" id="msg" name='message' onChange={onchange} value={info.message} />

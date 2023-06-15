@@ -74,7 +74,7 @@ function Navbar() {
 {/* <!-- Navbar --> */}
   <nav className="navbar navbar-expand-lg navbar-dark sticky-top mask-custom shadow-0">
     <div className="container">
-      <a className="navbar-brand" href="#home"> Patel</a>
+      <a className="navbar-brand para capi" href="#home"> Patel's Portfolio</a>
  
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,13 +84,13 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto">
           <li className="nav-item">
-            <a className="nav-link" href="#home">Home</a>
+            <a className="nav-link para capi" href="#home">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#about">About Me</a>
+            <a className="nav-link para capi" href="#about">About Me</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contect">Contect Me</a>
+            <a className="nav-link para capi" href="#contect">Contect Me</a>
           </li>
         </ul>
         <ul className="navbar-nav d-flex flex-row">

@@ -5,13 +5,14 @@ import "./home.css";
 import Form from "./Form";
 
 
-const Contect = () => {
+const Contect = (props) => {
   
   return (
     <>
       <div id="contect" className="mt-5">
-        <div className="hris">
-          <hr className="center d-none" />
+        
+        <div className="hris ">
+          <hr className="center" />
         </div>
     
 
@@ -69,7 +70,7 @@ const Contect = () => {
           </div>
 
           <div className="container mt-3">
-            <Form/>
+            <Form />
           </div>
         </div>
       </div>

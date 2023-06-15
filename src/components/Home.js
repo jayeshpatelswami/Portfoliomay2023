@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.css";
 import imgsrc from "./patel.jpg";
+import ReactGA from "react-ga"
+
 
 export default function Home() {
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+   
+  }, [])
+
+const handaldownload =()=>{
+  ReactGA.event({
+    category:"Clicked by user",
+    action:"send POrtfoli",
+    label:"none",
+    value:"none"
+  })
+}
+  
   return (
     <>
       <div id="home" className=" mt-5">
@@ -16,6 +33,7 @@ export default function Home() {
          
             I am a Full Stack Web developer and React Developer and gamer.
           </h3>
+          <button className="btn btn-dark" onClick={handaldownload}>Download </button>
         </div>
         <div>
           <img

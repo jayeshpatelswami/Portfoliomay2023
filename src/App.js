@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contect from "./components/Contect";
 import Footer from "./components/Footer";
+import ReactGA from "react-ga"
+import Alert from "./components/Alert";
 
 function App() {
 
@@ -21,18 +23,22 @@ function App() {
   //     document.body.style.color="black"
   //  }
   // }
+
+const TRACKING_ID = "UA-269857130-2"
+ReactGA.initialize(TRACKING_ID);
+
   document.body.style.backgroundColor = "black";
   document.body.style.color = "white";
+
   return (
     <>
       {/* <Navbar theme={mode} toggal={handalchange}/> */}
 
       <Navbar />
-
+      {/* <Alert /> */}
       <Home />
       <About />
-      <Contect />
-
+      <Contect  />
       <Footer />
     </>
   );
