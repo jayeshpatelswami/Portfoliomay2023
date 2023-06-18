@@ -4,8 +4,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contect from "./components/Contect";
 import Footer from "./components/Footer";
-import ReactGA from "react-ga"
-import Alert from "./components/Alert";
+import ReactGA from "react-ga4"
+
 
 function App() {
 
@@ -24,11 +24,25 @@ function App() {
   //  }
   // }
 
-const TRACKING_ID = "UA-269857130-2"
+
+
+
+const TRACKING_ID = "UA-269857130-5"
+// const TRACKING_ID = "G-W0TJ3QH9HQ"
+
+
+// const TRACKING_ID = "G-PYYLRMZ35X"
+// const TRACKING_ID = "G-NLF7Y5MW19"
+// const TRACKING_ID = "G-MKTNMH95X4"
+// const TRACKING_ID = "G-L8BT9X4VZB"
+// const TRACKING_ID = "UA-269857130-3"
+// const TRACKING_ID = "UA-269857130-2"
 ReactGA.initialize(TRACKING_ID);
+
 
   document.body.style.backgroundColor = "black";
   document.body.style.color = "white";
+
 
   return (
     <>
@@ -41,6 +55,7 @@ ReactGA.initialize(TRACKING_ID);
       <Contect  />
       <Footer />
     </>
+  
   );
 }
 

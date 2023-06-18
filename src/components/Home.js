@@ -1,25 +1,26 @@
-import React, { useEffect } from "react";
+import React , {useEffect} from "react";
 import "./home.css";
 import imgsrc from "./patel.jpg";
-import ReactGA from "react-ga"
-
+import jayeshresume from './jayeshpatelresume.pdf'
+import ReactGA from "react-ga4"
 
 export default function Home() {
 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname)
-   
-  }, [])
 
 const handaldownload =()=>{
   ReactGA.event({
-    category:"Clicked by user",
+    category:"user wants resume",
     action:"send POrtfoli",
-    label:"none",
-    value:"none"
+    label:"Portfolio download"
   })
 }
+
+useEffect(() => {
   
+  // Send pageview with a custom path
+  ReactGA.send({ hitType: "pageview", page: "/", title: "visited home" });
+}, [])
+
   return (
     <>
       <div id="home" className=" mt-5">
@@ -33,7 +34,9 @@ const handaldownload =()=>{
          
             I am a Full Stack Web developer and React Developer and gamer.
           </h3>
+          <a href={jayeshresume} download = {jayeshresume} style={{textDecoration:"none"}}>
           <button className="btn btn-dark" onClick={handaldownload}>Download </button>
+          </a>
         </div>
         <div>
           <img
